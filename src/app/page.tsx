@@ -1,3 +1,5 @@
+import LoginForm from "@/components/login-form";
+import RegisterForm from "@/components/register-form";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -14,8 +16,8 @@ export default function Home() {
         <Image src="/login.png" alt="login" width={554} height={832}/>
       </aside>
 
-      <div>
-        <div className="size-[75px] bg-rose-600 rounded-full"></div>
+      <div className="flex flex-col items-center gap-10 m-auto">
+        <div className="size-[75px] bg-rose-600 rounded-full m-auto"></div>
         <h1 className="text-4xl font-extrabold uppercase">Sphere</h1>
         
         <Tabs defaultValue="entrar" className="w-[400px]">
@@ -25,11 +27,11 @@ export default function Home() {
           </TabsList>
           
           <TabsContent value="entrar">
-            <h1>form de login</h1>
+            <LoginForm />
           </TabsContent>
 
           <TabsContent value="registrar">
-            <h1>form de conta</h1>
+            <RegisterForm />
           </TabsContent>
         </Tabs>
 
