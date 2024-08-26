@@ -1,5 +1,5 @@
-import LoginForm from "@/components/login-form";
-import RegisterForm from "@/components/register-form";
+import LoginForm from "@/components/home/login-form";
+import RegisterForm from "@/components/home/register-form";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";

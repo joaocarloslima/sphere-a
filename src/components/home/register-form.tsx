@@ -2,11 +2,11 @@
 
 import { createUser } from "@/app/actions/user-actions"
 import { useFormState } from "react-dom"
-import { Button } from "./ui/button"
-import { Alert, AlertDescription, AlertTitle } from "./ui/alert"
+import { Button } from "@/components/ui/button"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { CheckIcon } from "lucide-react"
-import { Label } from "./ui/label"
-import { Input } from "./ui/input"
+import { Label } from "@/components/ui/label"
+import { Input } from "@/components/ui/input"
 
 const initialState = {
     success: false,
