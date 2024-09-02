@@ -9,7 +9,7 @@ interface User {
 
 interface Post{
     id: number,
-    content: string,
+    text: string,
     user: User,
     createdAt: string,
 }

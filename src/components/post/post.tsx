@@ -14,7 +14,7 @@ export function Post({post}: { post: Post}){
                     {moment(post.createdAt, "YYYY-MM-DDTHH:mm:ss").fromNow()}
                 </span>
             </div>
-            <p>{[post.content]}</p>
+            <p>{[post.text]}</p>
         </div>
     )
 

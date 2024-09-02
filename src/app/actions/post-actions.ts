@@ -5,7 +5,7 @@ import { redirect } from "next/navigation"
 
 export async function createPost(formData: FormData){
     const post = {
-        content: formData.get('content'),
+        text: formData.get('content'),
     }
 
     const response = await fetch('http://localhost:8082/posts', {
@@ -25,7 +25,7 @@ export async function createPost(formData: FormData){
  
 }
 
-export async function getPosts(page: number = 1){
+export async function getPosts(page: number = 0){
     const response = await fetch(`http://localhost:8082/posts?page=${page}`, {
         headers: {
             "Authorization": `Bearer ${cookies().get('token')?.value}`
